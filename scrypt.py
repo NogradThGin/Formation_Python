@@ -21,4 +21,5 @@ def word_count():
     
     return count
     
-print(word_count())
+print("There is {0} lines".format(line_count()))
+print("There is {0} words".format(word_count()))
