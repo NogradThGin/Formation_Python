@@ -4,8 +4,7 @@ def line_count():
     count = int(0)
     
     file = open('./example_file', 'r')
-    
-    for i in file:
+    for i in file.readlines():
         count += 1
     
     file.close()    
@@ -16,8 +15,7 @@ def word_count():
     
     file = open('./example_file', 'r')
     for i in file.readlines():
-        if(i != '\n'):
-            count += len(i.split())
+        count += len(i.split())
     
     file.close()
     return count
