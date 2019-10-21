@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
 
-import random;
+days_num = int(input("Enter a nombre: "))
 
-noms = ['Arthur', 'Bernard', 'Alexis', 'Jason']
-surnoms = ['La Vermine', 'L\'Ours', 'L\'Araignée', 'Le Crustacé', 'La belette']
-
-rdmNoms = int(random.random()*len(noms) -1)
-rdmSurnoms = int(random.random()*len(surnoms) -1)
-
-print("Resultat: " + noms[rdmNoms] + " " + surnoms[rdmSurnoms])
+if (days_num/400) == 1:
+    print("Is bisextille of quatre-cent")
+elif (days_num % 2) == 0:
+    print("Is bisextille")
+else:
+    print("Is not bisextille")

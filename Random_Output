@@ -1,0 +1,11 @@
+#!/usr/bin/env python3
+
+import random;
+
+noms = ['Arthur', 'Axel', 'Alexis', 'Valentin']
+surnoms = ['La Vermine', 'L\'Ours', 'L\'Araignée', 'Le Crustacé', 'La Belette']
+
+rdmNoms = int(random.random()*len(noms) -1)
+rdmSurnoms = int(random.random()*len(surnoms) -1)
+
+print("Resultat: " + noms[rdmNoms] + " " + surnoms[rdmSurnoms])
