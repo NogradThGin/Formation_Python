@@ -1,23 +1,24 @@
 #!/usr/bin/env python3
 
-def count(string):    
-    dic = {
-            'a': int(0),
-            'e': int(0),
-            'i': int(0),
-            'o': int(0),
-            'u': int(0),
-            'y': int(0),
-    }
+def line_count():  
+    count = int(0)
+    
+    file = open('./example_file', 'r')
+    
+    for i in file:
+        count += 1
         
-    for char in string:
-        if char in dic.keys():
-            dic[char] += 1;
-            
-    return dic
+    return count
 
-dic = count(input("Enter a sentence to analyze: "))
-
-
-for i in dic:
-    print("Character {0}: {1}".format(i, dic[i]))
+def word_count():  
+    count = int(0)
+    
+    file = open('./example_file', 'r')
+    for i in file.readlines():
+        if(i != '\n'):
+            #print(len(i.split()))
+            count += len(i.split())
+    
+    return count
+    
+print(word_count())

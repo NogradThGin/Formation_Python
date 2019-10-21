@@ -1,0 +1,17 @@
+Public repositories on GitHub are often used to share open source software. For your repository to truly be open source, you'll need to license it so that others are free to use, change, and distribute the software.
+
+Choosing the right license
+We created choosealicense.com, to help you understand how to license your code. A software license tells others what they can and can't do with your source code, so it's important to make an informed decision.
+
+You're under no obligation to choose a license. However, without a license, the default copyright laws apply, meaning that you retain all rights to your source code and no one may reproduce, distribute, or create derivative works from your work. If you're creating an open source project, we strongly encourage you to include an open source license. The Open Source Guide provides additional guidance on choosing the correct license for your project.
+
+Note: If you publish your source code in a public repository on GitHub, according to the Terms of Service, other GitHub users have the right to view and fork your repository within the GitHub site. If you have already created a public repository and no longer want users to have access to it, you can make your repository private. When you convert a public repository to a private repository, existing forks or local copies created by other users will still exist. For more information, see "Making a public repository private."
+
+Determining the location of your license
+Most people place their license text in a file named LICENSE.txt (or LICENSE.md) in the root of the repository; here's an example from Hubot.
+
+Some projects include information about their license in their README. For example, a project's README may include a note saying "This project is licensed under the terms of the MIT license."
+
+As a best practice, we encourage you to include the license file with your project.
+
+Searching GitHub by license type
