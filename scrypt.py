@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 
-days_num = int(input("Enter a nombre: "))
+year = int(input("Enter a nombre: "))
 
-if (days_num/400) == 1:
-    print("Is bisextille of quatre-cent")
-elif (days_num % 2) == 0:
-    print("Is bisextille")
+if (year % 4) == 0:
+    if (year % 100) != 0 or (year % 400) == 0:
+        print("Is Bissextile")
+    else:
+        print("Is not bissextile")
 else:
-    print("Is not bisextille")
+    print("Is not bissextile")
